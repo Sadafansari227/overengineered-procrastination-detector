@@ -157,7 +157,7 @@ The generated production files are normally placed in the `dist/` directory.
 
 ## 🌐 Deployment
 
-GitHub Pages is configured to publish the Vite production build from the `dist/` directory using GitHub Actions.
+The GitHub Actions workflow builds the Vite production site into `dist/` and deploys that artifact to GitHub Pages.
 
 For the first deployment, open the repository's **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. After that, every push to `main` runs the deployment workflow automatically. The published application is available at:
 
