@@ -157,17 +157,15 @@ The generated production files are normally placed in the `dist/` directory.
 
 ## 🌐 Deployment
 
-This project can be deployed using static hosting platforms that support Vite applications, such as GitHub Pages, Vercel, or Netlify.
+GitHub Pages is configured to publish the Vite production build from the `dist/` directory using GitHub Actions.
 
-Before deploying:
+For the first deployment, open the repository's **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. After that, every push to `main` runs the deployment workflow automatically. The published application is available at:
 
-1. Run `npm run build`.
-2. Confirm that the production build completes successfully.
-3. Configure the hosting platform for the project.
-4. Deploy the generated application.
-5. Test the deployed URL.
+```text
+https://sadafansari227.github.io/overengineered-procrastination-detector/
+```
 
-**Important:** Uploading the source code to GitHub does not automatically make the application publicly accessible as a live website. Deployment must be configured separately.
+To build locally, run `npm run build`; Vite writes the deployable files to `dist/` with the GitHub Pages project path applied.
 
 ## 🔒 Security and Privacy
 
